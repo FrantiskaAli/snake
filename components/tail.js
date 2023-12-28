@@ -10,7 +10,7 @@ export default function Tail({ size, elements, color }) {
 
 
             {elements.map((el, i) => {
-                return <View key={i} style={{ width: size, height: size, backgroundColor: color, position: "absolute", left: el[0] * size, top: el[1] *size }} />
+                return <View key={i} style={{ width: size, height: size, backgroundColor: i%2 === 0 ? "red" : "blue", position: "absolute", left: el[0] * size, top: el[1] *size }} />
             })}
 
 
